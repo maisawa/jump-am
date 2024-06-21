@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class AnimationConponent : MonoBehaviour
 {
-    // Start is called before the first frame update
 
     Animator _anim;
     void Start()
