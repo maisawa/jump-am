@@ -5,6 +5,7 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
     Animator _anim;
+    AudioSource _audioSource;
 
     void Start()
     {
@@ -23,6 +24,8 @@ public class Item : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        _audioSource = GetComponent<AudioSource>();
+        _audioSource.Play();
         _anim.SetBool("IsGet", true);
         //_anim.Play("Get");
         //Debug.Log(other.name + " Ç™ê⁄êGÇµÇΩ");
